@@ -1,2 +1,0 @@
-# Kwiatkowski
-Strona do cwiczen
