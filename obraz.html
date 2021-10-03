@@ -1,0 +1,46 @@
+<html>
+	<head>            
+	  <script type="text/javascript">                  
+	  function okno_zamknij_kwiatkowski()                    
+	  {                             
+	  window.close()                     
+	  }           
+	  </script>    
+  </head> 
+<body>        
+	 1. Kiedy powstal javascript?<br>
+		-JavaScript powstał w maju w 1995 roku.<br>
+		
+	 2. Dlaczego javascript jest językiem skryptowym
+		-Język skryptowy  – język programowania obsługujący skrypty. Często służący do kontrolowania określonej aplikacji. <br>
+		-W tym przypadku aplikacją jest przeglądarka.<br>
+			
+	 3. Gdzie jest wykonywany JS?<br>
+		- JavaScript jest wykonywany przez silnik JavaScriptu w przeglądarce, po tym jak HTML i CSS zostaną skompletowane w stronę internetową<br>
+		
+	 4. Dlaczego JS jest bezpiecznym narzędziem?<br>
+		- JavaScript został zaprojektowany, aby uniemożliwić atakującym uzyskanie dostępu do Twoich plików lub jakichkolwiek prywatnych informacji. Na przykład ma wsparcie, aby uniemożliwić skryptowi w jednej witrynie przeglądanie danych z innej witryny<br>
+		
+	 5. Czy JS jest językiem obiektowym i dlaczego.<br>
+		- W JavaScript większość rzeczy jest obiektami, począwszy od najbardziej fundamentalnych rzeczy jak stringi czy tablice, na API przeglądarek zbudowanym na szczycie JavaScriptu kończąc. <br><br><br><br><br>
+		
+		<textarea cols=150> <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"> </textarea><br><br>
+		Znacznik ten definiuje zwykły przycisk, w środku którego znajduję się napis "Nowa strona", a po jego kliknięciu wykonuje się funkcja o nazwie WinOpen(' ')<br><br><br>
+		
+		<textarea cols=150> window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); </textarea><br><br>
+		Po wykonaniu funkcji otwiera nam nową kartę o nazwie obraz.html, z określonymi atrybutami (metoda, która pozwala na otworzenie nowego okna.) <br>
+		toolbar=no - ukrywa standardowy pasek narzędzi<br>
+		directories=no - ukrywa przyciski katalogów<br>
+		menubar=no - Okno nie posiada widocznego paska menu <br>
+		height=280 - wartość w pixelach; ustawia wysokość okna na 280px<br>
+		width=160 - wartość w pixelach; ustawia szerokość okna na 160px<br>
+		top=200 - wartość w pixelach : ustawia położenie okna względem góry ekranu<br>
+		left=200 -  wartość w pixelach : ustawia położenie okna względem lewej strony ekran<br><br><br>
+
+		<textarea cols=150> window.close() </textarea><br><br>
+			służy do zamknięcia aktualnego okna.<br><br><br>
+
+	<<img src="obraz5.gif" width="250" height="275"/>    <br> 
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kwiatkowski()"/> 
+</body>
+</html> 
