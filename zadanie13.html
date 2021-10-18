@@ -1,0 +1,21 @@
+<html>
+ <body>
+	<div style="color:Navy; font-size:30px;">
+		<script language="JavaScript">
+			var A_kwi=prompt("podaj pierwsza liczbe A = ","");
+			var A=parseFloat(A_kwi);
+			var B_kwi=prompt("podaj druga liczbe B = ","");
+			var B=parseFloat(B_kwi);
+			var O1=A*A*A
+			var O2=3*(A*A)*B
+			var O3=3*A*(B*B)
+			var O4=B*B*B
+			var suma=O1+O2+O3+O4
+			document.write("Wczytane liczby: A = "+A+" B = "+B+" <br>");
+			
+			document.write("("+A+" + "+B+")^3 = "+A+"^3 + 3 * (("+A+")^2) * "+B+" + 3 * "+A+" * (("+B+")^2) + "+B+"^3 = "+O1+" + "+O2+" + "+O3+" + "+O4+" = "+suma+"");
+			
+		</script>
+	</div>
+ </body>
+</html>
