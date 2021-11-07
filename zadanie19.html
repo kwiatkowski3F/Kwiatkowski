@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+function Pole_ber(a,b)
+{
+ a_liczba=parseFloat(a)
+ b_liczba=parseFloat(b)
+ p_wynik=a_liczba*b_liczba
+ document.getElementsByName('pole')[0].value=p_wynik.toFixed(2); /* na dokument */
+ alert("P="+p_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="P="+p_wynik.toFixed(2)+"cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_kwi(a,b)
+{
+ a_liczba=parseFloat(a)
+ b_liczba=parseFloat(b)
+ Obw_wynik=2*a_liczba+2*b_liczba
+ document.getElementsByName('obw')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Obliczanie Pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole_ber(this.a.value,this.b.value);
+obwod_ber(this.a.value,this.b.value);return false">
+Podaj a=&nbsp
+<input size="6" name="a">&nbsp&nbsp&nbsp
+Podaj b=&nbsp
+<input size="6" name="b">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole &nbsp
+<input size="6" name="pole">&nbsp&nbsp&nbsp&nbsp&nbsp
+Obwod&nbsp
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

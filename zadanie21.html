@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+</title>
+ <script language="JavaScript">
+function dlugosc_ber(a,b)
+{
+ a=parseFloat(a)
+ b=parseFloat(b)
+ c1 = (a * a + b * b)
+ c=Math.sqrt(c1)
+ document.getElementsByName('dlugosc')[0].value=c.toFixed(2); /* na dokument */
+ alert("Dlugosc="+c.toFixed(2)+" m"); /*do okna Alert */
+ pokaz1.innerHTML="dlugosc="+c.toFixed(2)+"cm"+"<br>"; /* do tabeli */
+}
+function kat_kwi(a,b)
+{
+ a_liczba=parseFloat(a)
+ b_liczba=parseFloat(b)
+ d=Math.atan(b)
+ e=(180*d/Math.PI)
+ document.getElementsByName('kat')[0].value=e.toFixed(2);
+ alert("kat="+e.toFixed(2)+" stopni");
+ pokaz2.innerHTML="kat="+e.toFixed(2)+"stopni";
+}
+ </script>
+</head>
+<body>
+Obliczanie dlugosci i kata drabiny
+<br> <br>
+<form name="formularz" action="..." onsubmit="dlugosc_ber(this.a.value,this.b.value);
+kat_ber(this.a.value,this.b.value);return false">
+Podaj d=&nbsp
+<input size="6" name="a">&nbsp&nbsp&nbsp
+Podaj x=&nbsp
+<input size="6" name="b">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=&nbsp
+<input size="6" name="dlugosc">&nbsp&nbsp&nbsp&nbsp&nbsp
+Alfa=&nbsp
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
